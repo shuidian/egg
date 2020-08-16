@@ -23,6 +23,13 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
+  config.sequelize = {
+    dialect: 'postgres',
+    host: '127.0.0.1',
+    port: 5432,
+    database: 'postgres',
+  };
+
   return {
     ...config,
     ...userConfig,
